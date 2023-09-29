@@ -267,26 +267,27 @@
 					</header>
 					<div class="row">
 						<div class="col-12">
-							<form method="post" action="https://formsubmit.co/b21b403f46e128198abf23391cca31fe">
+							<form method="post" id="contact-form" action="https://formsubmit.co/b21b403f46e128198abf23391cca31fe">
 								<!-- honeypot -->
-								<input type="text" name="_honey" style="display: none;">
-								<!-- disable capcha -->
+								<input type="text" id="honeypot" name="_honey" style="display: none;">
+								<!-- disable captcha -->
 								<input type="hidden" name="_captcha" value="false">
 								<input type="hidden" name="_next" value="https://xaviersky1.github.io/momii/success.html">
 								
 								<div class="row">
 									<div class="col-6 col-12-small">
-										<input type="text" name="name" id="name" placeholder="Name" />
+										<input type="text" name="name" required id="name" placeholder="Name" />
 									</div>
 									<div class="col-6 col-12-small">
-										<input type="text" name="email" id="email" placeholder="Email" />						
+										<input type="text" name="email" required id="email" placeholder="Email" />						
 									</div>
 									<div class="col-12">
-										<input type="text" name="subject" id="subject" placeholder="Subject" />
+										<input type="text" name="subject"required id="subject" placeholder="Subject" />
 									</div>
 									<div class="col-12">
-										<textarea name="message" id="message" placeholder="Message"></textarea>
+										<textarea name="message" required id="message" placeholder="Message"></textarea>
 									</div>
+								
 									<div class="col-12">
 										<ul class="actions">
 											<li><input type="submit" value="Send Message" /></li>
@@ -340,7 +341,8 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-			<!-- <script src="assets/js/haha.js"></script> -->
+			<!-- <script src="assets/js/validation.js"></script> -->
+			
 
 	</body>
 </html>
